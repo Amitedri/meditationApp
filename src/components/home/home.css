@@ -1,0 +1,207 @@
+.mainContainer {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../../assets/meditationMain\ 1.png");
+}
+
+.intro {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+
+.introText {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+.introText h1 {
+  font-size: 75px;
+}
+.introText h2 {
+  font-size: 50px;
+}
+.interaction {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.inputContainer {
+  height: 52%;
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.inputRounded {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 6px 30px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 6px 30px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 6px 30px 0px rgba(255, 255, 255, 0.75);
+  border: 2px solid pink;
+  -webkit-animation: heartbeat 1.5s ease-in-out 1s infinite both;
+  animation: heartbeat 1.5s ease-in-out 1s infinite both;
+}
+@-webkit-keyframes heartbeat {
+  from {
+    border: 0px solid pink;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.inputRounded input {
+  all: unset;
+  width: 75%;
+  align-self: center;
+  border-bottom: 2px solid grey;
+}
+
+.submitBtn {
+  all: unset;
+  padding: 10px 35px;
+  background: transparent;
+  width: 50px;
+  height: 25px;
+  border: 1px solid pink;
+  border-radius: 20px;
+  font-size: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+.tryBtn {
+  all: unset;
+  padding: 10px 35px;
+  background: transparent;
+  width: auto;
+  height: 25px;
+  border: 1px solid pink;
+  border-radius: 20px;
+  font-size: 20px;
+  align-self: center;
+  position: absolute;
+  top: 38%;
+  left: 65%;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-animation: blink-1 0.6s both;
+  animation: blink-1 0.6s both;
+}
+.loginSmBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  color: pink;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+/*
+* ----------------------------------------
+* animation blink-1
+* ----------------------------------------
+*/
+@-webkit-keyframes blink-1 {
+   0%,
+   50%,
+   100% {
+     opacity: 1;
+   }
+   25%,
+   75% {
+     opacity: 0;
+   }
+ }
+ @keyframes blink-1 {
+   0%,
+   50%,
+   100% {
+     opacity: 1;
+   }
+   25%,
+   75% {
+     opacity: 0;
+   }
+ }
+ 

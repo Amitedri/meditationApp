@@ -1,0 +1,155 @@
+.layoutContainer {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.upperLayout {
+  width: 100%;
+  height: 35%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.buttomLayout {
+  width: 100%;
+  height: 35%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.meditationCounter {
+  top: 0;
+  height: 300px;
+  width: 30%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffdcdc 0%,
+    rgba(255, 220, 220, 0) 100%
+  );
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.display {
+  height: 60%;
+  width: 85%;
+  align-self: center;
+  border-radius: 15px;
+  border: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+}
+.display ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 30%;
+  border-left: 2px solid pink;
+  border-top: 2px solid pink;
+  padding-bottom: 2%;
+}
+.display ::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  width: 30%;
+  border-right: 2px solid pink;
+  border-bottom: 2px solid pink;
+  padding-bottom: 5%;
+}
+.counterDisplay {
+  width: 50%;
+  height: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.hour {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  color: black;
+  align-content: center;
+  align-self: right;
+  letter-spacing: 5px;
+}
+.seconds {
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  color: black;
+  align-content: center;
+}
+.controls {
+  height: 70px;
+  width: 85%;
+  align-self: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+}
+.btn {
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+  padding: 15px 25px;
+  border: 1px solid pink;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
