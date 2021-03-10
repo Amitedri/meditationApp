@@ -1,0 +1,74 @@
+.mplayerContainer {
+  height: 80%;
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+
+.playigInfo {
+  height: 50%;
+  width: 100%;
+  border-radius: 21px;
+  background: rgba(255, 255, 255, 0.64);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(65, 133, 197);
+}
+
+.playignNow{
+  animation: showText 1s ease-in-out;
+  align-self: center;
+  transition: all 1s ease-in-out;
+}
+.mediaControllers {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+.mediaControllers::after {
+  content: ' ';
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.733);
+}
+.mediaButton {
+  align-self: center;
+  margin-top: 5%;
+  cursor: pointer;
+}
+@media screen and (max-width: 1150px) {
+  .mediaControllers{
+    height: 15%;
+    width: 100%;
+  }
+  .mediaButton{
+    height: 100%;
+    width: 30%;
+  }
+  .mediaButton img{
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mediaControllers{
+    height: 15%;
+    width: 100%;
+  }
+  .mediaButton{
+    height: 100%;
+    width: 30%;
+  }
+  .mediaButton img{
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.App {
+	height: auto;
+	width: 100%;
+	position: relative;
+	font-family: 'Poppins', sans-serif !important;
+	overflow-x: hidden;
+}
+#particles-js{
+	position: absolute;
+	left: 0;
+	top: 20%;
+	height: 50vh;
+	width: 100vw;
+	z-index: 1;
+}
+button{
+	cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+	#particles-js {
+	  top: 15%;
+	}
+  }
+  @media screen and (max-width: 700px) {
+	#particles-js {
+	  top: 12%;
+	}
+  }

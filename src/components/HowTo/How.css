@@ -1,0 +1,289 @@
+.pageContainer {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(79.59% 170.02% at 19.3% 24.43%, rgba(67, 7, 237, 0.75) 0%, rgba(66, 0, 255, 0.2) 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Advent Pro', sans-serif !important;
+  color: white;
+}
+
+.bubbleBackground {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  right: -5%;
+}
+.bubbleBackground img {
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  object-fit: cover;
+}
+
+/* TOP CONTAINER */
+.howtoTopContainer {
+  width: 75%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.pageHeader {
+  width: 50%;
+  height: 60%;
+  margin-top: 5%;
+}
+.pageHeader h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.pageHeader span {
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.howtoTopContainer img {
+  height: 80%;
+  width: 35%;
+  transform: rotate(180deg);
+}
+
+.scrollToView {
+  align-self: center;
+  position: relative;
+  /* top: 2%; */
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.howtoMidContainer{
+  height: 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%;
+  /* margin-top: 5%; */
+  margin-bottom: 2%;
+  justify-content: center;
+
+}
+.interactiveBenefit {
+  height: 60%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* justify-content: center; */
+
+}
+
+.interactiveBenefit h2 {
+  margin: 0;
+}
+.interactiveBenefit img {
+  height: 80%;
+  width: 50%;
+  align-self: center;
+}
+
+.howtoBottomContainer {
+  width: 65%;
+  height: 25%;
+  display: flex;
+  align-self: start;
+  position: relative;
+  bottom: 10%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 3%;
+}
+.howtoBottomContainer h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.howtoRow {
+  width: 100%;
+  max-height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.howtoRow::before {
+  content: ' ';
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+}
+.howtoRow h2 {
+  margin: 0;
+  width: 80%;
+  align-self: center;
+}
+.howtoStep {
+  height: 100%;
+  width: 25%;
+  align-self: center;
+}
+
+.howtoRow img {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.firstTryActionButton {
+  all: unset;
+  height: 5%;
+  width: 10%;
+  background: linear-gradient(95.11deg, #6423ee 8.36%, #db00ff 100%);
+  border-radius: 19px;
+  margin-top: 1%;
+  margin-left: 25%;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.firstTryActionButton:hover {
+  transform: scale(1.1);
+  border: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+/* laptops */
+@media screen and (max-width: 1400px) {
+  .pageHeader {
+    height: 100%;
+  }
+
+  .firstTryActionButton{
+    margin-top: 2%;
+  }
+
+}
+/* Smaller Desktop */
+@media screen and (max-width: 1160px) {
+  .howtoRow h2 {
+    font-size: 0.8em;
+  }
+  .howtoTopContainer {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+/* Smaller Desktop */
+
+@media screen and (max-width: 1010px) {
+  .howtoRow h2 {
+    font-size: 0.8em;
+  }
+  .bubbleBackground {
+    display: none;
+  }
+  .howtoTopContainer {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .howtoTopContainer img {
+    display: none;
+  }
+  .pageHeader {
+    width: 100%;
+  }
+  .howtoBottomContainer {
+    width: 100%;
+  }
+  .howtoMidContainer{
+    width: 80%;
+  }
+
+  .firstTryActionButton {
+    margin-left: 38%;
+    margin-top: 5%;
+    width: 20%;
+  }
+}
+
+/* IPADS */
+@media screen and (max-width: 650px) {
+  .howtoTopContainer img {
+    display: none;
+  }
+  .pageHeader {
+    width: 100%;
+  }
+  .howtoBottomContainer {
+    width: 100%;
+  }
+  .howtoMidContainer{
+    margin-left: 10%;
+  }
+  .interactiveBenefit img{
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 460px) {
+  .pageHeader {
+    height: 100%;
+    align-self: center;
+  }
+  .howtoMidContainer {
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;
+    height: 20%;
+    align-self: center;
+  }
+  .interactiveBenefit{
+    justify-content: center;
+    height: 60%;
+  }
+  .interactiveBenefit h2{
+    align-self: flex-start;
+  }
+  .interactiveBenefit img{
+    align-self: flex-start;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 400px) {
+  .pageHeader {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .howtoTopContainer span {
+    font-size: 12px;
+    margin: 0;
+    margin-right: 2%;
+  }
+  .interactiveBenefit h2 {
+    font-size: 0.8em;
+    left: 30%;
+  }
+  .howtoBottomContainer h1 {
+    font-size: 2em;
+  }
+  .firstTryActionButton {
+    margin-top: 5%;
+    height: 5%;
+    width: 25%;
+  }
+}

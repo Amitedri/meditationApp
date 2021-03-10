@@ -1,0 +1,33 @@
+.errorContainer {
+  height: 8vh;
+  width: 15vw;
+  position: absolute;
+  bottom: 5vh;
+  right: 0;
+  background-color: rgb(0, 177, 0);
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.errorContainer span {
+  color: white;
+  align-self: center;
+}
+
+@media screen and (max-width: 992px) {
+  .errorContainer {
+    bottom: 10vh;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .errorContainer {
+    bottom: 10vh;
+    right: 5%;
+    width: 35%;
+  }
+}

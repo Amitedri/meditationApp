@@ -1,0 +1,79 @@
+.stepContainer {
+  height: 10%;
+  width: 15%;
+  background-color: rgba(0, 0, 255, 0.623);
+  align-self: center;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  bottom: 3%;
+  border-radius: 5px;
+}
+.stepNumber {
+  height: 100%;
+  width: 50%;
+  font-size: 5em;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+}
+.stepNumber span {
+  align-self: center;
+}
+
+.stepDescription {
+  height: 100%;
+  width: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+}
+.stepDescription span {
+  align-self: center;
+}
+
+.stepContainer:nth-child(3) {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+}
+.stepContainer:nth-child(5) {
+  position: absolute;
+  left: 3%;
+  top: 60%;
+}
+@media screen and (max-width: 992px) {
+  .mplayerContainer {
+    width: 80%;
+  }
+  .stepNumber {
+    font-size: 3em;
+  }
+  .stepDescription {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .stepContainer {
+    font-size: 25px;
+    width: 50%;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+  }
+  .stepDescription {
+    align-self: center;
+  }
+
+  .stepNumber {
+    display: none;
+  }
+  .stepContainer:nth-child(3),
+  .stepContainer:nth-child(5) {
+    display: none;
+  }
+}

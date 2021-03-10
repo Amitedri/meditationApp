@@ -1,0 +1,50 @@
+.chartContainer {
+  height: 30%;
+  width: 50%;
+  background: linear-gradient(101.86deg, #9240e4 7.25%, rgba(78, 183, 241, 0.46) 101.64%);
+  border-radius: 5px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+}
+.chartContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.chartContainer h1,
+h2 {
+  margin: 0;
+  align-self: center;
+  color: white;
+  font-size: 1em;
+}
+.session {
+  color: white;
+  align-self: center;
+  font-size: 0.8em;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  border:1px solid white;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.session:active{
+  cursor:grabbing;
+  cursor: -o-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+@media screen and (max-width:992px) {
+  .session {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chartContainer {
+    display: none;
+  }
+}

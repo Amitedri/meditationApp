@@ -1,0 +1,157 @@
+.introContainer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: 'Oregano', cursive;
+  background: radial-gradient(75.83% 149.96% at 27.57% 21.97%, #6d00f9 0%, rgba(255, 255, 255, 0.98) 100%);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.introImageWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.infoImageWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.introTopContainer {
+  z-index: 1;
+  height: 35%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8%;
+  margin-left: 21%;
+  position: relative;
+}
+
+.introTopContainer h1 {
+  margin: 0;
+  align-self: center;
+  font-size: 6em;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.introTopContainer img {
+  position: absolute;
+  width: 80%;
+  left: 25%;
+  top: 35%;
+  margin: 0;
+}
+.secondary {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3em;
+  align-self: center;
+}
+
+.secondary h2 {
+  margin: 0;
+  margin-right: 5%;
+}
+
+.secondary .changeable {
+  font-size: 1.5em;
+}
+.introMidContainer {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.introMidContainer p {
+  margin: 0;
+  font-size: 1.5em;
+  align-self: center;
+}
+.actionButton {
+  align-self: center;
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.308);
+  border-radius: 28px;
+  position: relative;
+  z-index: 999;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.actionButton img {
+  height: 100%;
+  z-index: 2;
+}
+.actionButton::after {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(216, 0, 216, 0.329);
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.scrollButton {
+  align-self: center;
+  margin-top: 2%;
+  cursor: pointer;
+z-index: 9999;
+}
+
+@media screen and (max-width: 1150px) {
+  .introTopContainer img {
+    right: 5%;
+    width: 100%;
+    top: 35%;
+  }
+  .introTopContainer h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width:805px) {
+  .introTopContainer img {
+    right: 5%;
+    width: 100%;
+    top: 40%;
+  }
+  .introTopContainer h1 {
+    font-size: 5em;
+  }
+}
+@media only screen and (max-width:500px) {
+  .introTopContainer img {
+    width: 120%;
+    left: 0;
+    top: 42%;
+  }
+  .introTopContainer h1 {
+    font-size: 3em;
+  }
+  .secondary {
+    font-size: 2em;
+  }
+  .changeable {
+    font-size: 2em;
+  }
+  .scrollButton {
+    margin-top: 15% !important;
+  }
+}
+

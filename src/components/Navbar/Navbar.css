@@ -1,0 +1,192 @@
+.navbarContainer {
+  width: 100%;
+  height: 6vh;
+  background-color: #7b05fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  text-align: center;
+  font-size: 1vw;
+  z-index: 9999;
+}
+
+.navigationControllers {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  line-height: 5vh;
+  margin-left: 2%;
+}
+.buttonWrapper {
+  all: unset;
+  align-self: center;
+  height: 80%;
+  width: 15%;
+  background-color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  margin-right: 2vh;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #7b05fc;
+}
+.buttonWrapper:hover {
+  background-color: #7b05fc;
+  color: white;
+  border: 1px solid white;
+}
+.logout {
+  width: 35%;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 35px;
+}
+.logout:hover {
+  opacity: 0.8;
+}
+.accountControllers {
+  height: 80%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  align-self: center;
+  text-align: center;
+}
+.registerButton {
+  color: white;
+  align-self: center;
+  font-size: 1vw;
+  margin-right: 1vh;
+  background-color: rgba(12, 85, 196, 0.726);
+  height: 80%;
+  width: 50%;
+  border-radius: 5%;
+  align-self: flex-end;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.loginButton {
+  height: 50%;
+  width: 50%;
+  font-size: 0.8vw;
+  background-color: rgba(12, 85, 196, 0.726);
+  align-self: flex-end;
+  margin-right: 2%;
+  border-radius: 5%;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.mobile {
+  height: 80%;
+  width: 10%;
+  display: none;
+}
+
+.mobile img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .accountControllers {
+    display: none;
+  }
+  .navigationControllers {
+    display: none;
+  }
+  .navbarContainer {
+    justify-content: flex-end;
+  }
+  .mobile {
+    display: block;
+    align-self: center;
+    cursor: pointer;
+    filter: invert(100%);
+  }
+}
+
+/* MOBILE NAVIGATION */
+.mobileNavContainer {
+  position: absolute;
+  height: 25%;
+  width: 20%;
+  background: linear-gradient(208.82deg, #3b5edb 11.65%, rgba(111, 74, 120, 0.85) 94.08%);
+  right: 0;
+  top: 2%;
+  z-index: 9998;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  display: flex;
+  justify-content: center;
+  animation: appearFromRight 1s ease-in-out;
+}
+
+.mobileNavMenu {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.navItem {
+  all: unset;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  position: relative;
+}
+.navItem::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 60%;
+  border-bottom: 2px solid white;
+}
+.navItem span {
+  align-self: center;
+}
+.navItem:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes appearFromRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes appearFromRightMobile {
+  from {
+    width: 0;
+  }
+  to {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobileNavContainer {
+    height: 15%;
+    width: 35%;
+  animation: appearFromRightMobile 1s ease-in-out;
+
+  }
+}

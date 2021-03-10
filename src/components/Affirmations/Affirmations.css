@@ -1,0 +1,141 @@
+.affirmationsWrapper {
+  height: 80%;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.affirmationsHeader {
+  align-self: center;
+  width: 50%;
+  height: 10%;
+  color: #2362d4;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+}
+.affirmationsHeader span {
+  align-self: center;
+  
+}
+.affirmationsControllers {
+  margin-top: 5%;
+  align-self: center;
+  width: 70%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.affirmationsControllers input {
+  all: unset;
+  height: 100%;
+  width: 85%;
+  align-self: flex-end;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px #276dee;
+}
+.affirmationsControllers button {
+  all: unset;
+  height: 100%;
+  width: 15%;
+  align-self: flex-end;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 2px #ffffff;
+  margin-left: 5%;
+  color: #2362d4;
+  text-align: center;
+  line-height: 5px;
+}
+.affirmationsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  margin-top: 1vh;
+  height: 60%;
+  justify-content: flex-start;
+  text-align: center;
+}
+.affirmationsTextContainer:active{
+  cursor:grabbing;
+  cursor: -o-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.affirmationsTextContainer::-webkit-scrollbar {
+  display: none;
+}
+.singleAffirmation {
+  text-align: center;
+  align-self: center;
+  width: 60%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #9D97A4;
+}
+
+.removeAffirmation {
+  cursor: pointer;
+  height: 10px;
+  width: 10%;
+  position: relative;
+  border-radius: 5px;
+}
+.removeAffirmation img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .affirmationsHeader {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .affirmationsHeader {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+ 
+  .affirmationsHeader {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .affirmationsHeader {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .singleAffirmation {
+    width: auto;
+  }
+  .removeAffirmation{
+    min-height: 20px;
+    min-width: 20px;
+  }
+  .affirmationsWrapper{
+    overflow: hidden;
+  }
+}

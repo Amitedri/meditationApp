@@ -1,0 +1,69 @@
+.timerContainer {
+  height: 50%;
+  width: 85%;
+  align-self: center;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.currentTimeWrapper {
+  width: 80%;
+  height: 20%;
+  background-color: rgb(255, 255, 255);
+  align-self: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+.currentTimeWrapper span {
+  align-self: center;
+  color: rgb(66, 109, 226);
+}
+.more {
+  align-self: center;
+  width: auto;
+  height: auto;
+}
+
+.timerButton {
+  all: unset;
+  height: 25%;
+  width: 25%;
+  background-color: white;
+  align-self: center;
+  border-radius: 5px;
+  color: rgb(66, 109, 226);
+}
+.sessionEnd {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+}
+.pause {
+  height: 100%;
+  width: 50%;
+}
+
+.finish {
+  height: 100%;
+  width: 50%;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1488px) {
+  .start {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .timerButton {
+    width: 50%;
+    margin-top: 8%;
+  }
+}
