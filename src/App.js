@@ -43,10 +43,10 @@ const App = () => {
       <div className="App">
         <Navbar isAuth={token} logout={deleteToken} redirect={redirect} />
         <Switch>
-          <Route exact path="/" component={() => <Main />} />
-          <Route exact path="/howToMeditate" component={() => <HowTo />} />
-          <Route exact path="/info" component={() => <Info />} />
-          <Route exact path="/meditate" component={() => (token ? <Meditation isAuth={token} logout={deleteToken} /> : <Main />)} />
+          <Route exact path="/" render={() => <Main />} />
+          <Route exact path="/howToMeditate" render={() => <HowTo />} />
+          <Route exact path="/info" render={() => <Info />} />
+          <Route exact path="/meditate" render={() => (token ? <Meditation isAuth={token} logout={deleteToken} /> : <Main />)} />
         </Switch>
       </div>
     </Router>

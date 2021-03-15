@@ -12,7 +12,7 @@ const Navbar = ({ isAuth, logout, redirect }) => {
 
 
 
-  return (LargeNav(MobileNav,isAtMain,scrollToElem,isAuth,redirect,showModal,LogoutButton,AccountButtons,isOpen,MobileNav,LargeNav,logout,setIsOpen, menu));
+  return (LargeNav(MobileNav,isAtMain,scrollToElem,isAuth,redirect,showModal,LogoutButton,AccountButtons,isOpen,MobileMenu,LargeNav,logout,setIsOpen, menu));
 };
 
 export default Navbar;

@@ -14,14 +14,11 @@ const MobileNav = (isAuth, logout, isAtMain) => {
     </button>
   );
   const handleMeditationClick = (event) => {
-    if (isAuth && !isAtMain()) {
+    if (isAuth && !isAtMain() || isAuth && isAtMain()) {
       redirect('/meditate');
     }
     if (!isAuth && isAtMain()) {
       showModal(event, 'showModal');
-    }
-    if (isAuth && isAtMain()) {
-      redirect('/meditate');
     }
   };
 

@@ -28,7 +28,7 @@ const Register = ({ getErrors, redirect }) => {
     if (isUserValid && passwordsAreValid) {
       const req = await axios({
         method: 'POST',
-        url: 'http://127.0.0.1:5000/register',
+        url: 'http://127.0.0.1:5000/meditate/register',
         //Since passwords sends actually over HTTPS protocol no need for further encryption
         data: { username, password },
         headers: {

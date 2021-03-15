@@ -12,10 +12,6 @@ const PersonalPage = ({ isAuth, logout }) => {
   const getSessionInfo = (data) => {
     return setSession(() => data);
   };
-  React.useEffect(() => {
-    let elem = window.sessionStorage.getItem('sessions');
-    let parsed = JSON.parse(elem);
-  }, []);
   return (
     <div className="meditationContainer">
       <div className="mainContainer">

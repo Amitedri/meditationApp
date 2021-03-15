@@ -14,7 +14,7 @@ const Affirmations = () => {
         <input type="text" onInput={(event) => setAffirmation(event.target.value)} />
         <button onClick={() => addAffirmation(setAffirmations, affirmation)}>+</button>
       </div>
-      <div className="affirmationsTextContainer dragscroll">{mapAffirmations(affirmations,setAffirmations,close)}</div>
+      <div className="affirmationsTextContainer dragscroll">{mapAffirmations(affirmations, setAffirmations, close)}</div>
     </div>
   );
 };

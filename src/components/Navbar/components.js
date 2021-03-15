@@ -1,4 +1,5 @@
 import React from 'react';
+import redirect from '../../Utils/redirect';
 export const AccountButtons = (showModal) => {
   return (
     <div className="accountControllers">
@@ -28,8 +29,31 @@ export const MobileNav = (setIsOpen, menu) => {
     </div>
   );
 };
-
-export const LargeNav = (MobileNav, isAtMain, scrollToElem, isAuth, redirect, showModal, LogoutButton, AccountButtons, isOpen, MobileMenu, LargeNav,logout,setIsOpen,menu) => {
+const handleMeditateButton = (event, showModal) => {
+  if (window.location.pathname === '/') {
+    console.log('pathy');
+    showModal(event, 'showModal');
+    return;
+  }
+  window.location = '/';
+  return;
+};
+export const LargeNav = (
+  MobileNav,
+  isAtMain,
+  scrollToElem,
+  isAuth,
+  redirect,
+  showModal,
+  LogoutButton,
+  AccountButtons,
+  isOpen,
+  MobileMenu,
+  LargeNav,
+  logout,
+  setIsOpen,
+  menu
+) => {
   return (
     <div className="navbarContainer">
       {MobileNav(setIsOpen, menu)}
@@ -43,7 +67,7 @@ export const LargeNav = (MobileNav, isAtMain, scrollToElem, isAuth, redirect, sh
         <button className="buttonWrapper" onClick={() => (isAtMain() ? scrollToElem('bottom') : (window.location = '/info'))}>
           The Science
         </button>
-        <button className="buttonWrapper" id="register" onClick={(event) => (isAuth ? redirect('/meditate') : showModal(event, 'showModal'))}>
+        <button className="buttonWrapper" id="register" onClick={(event) => (isAuth ? redirect('/meditate') : handleMeditateButton(event, showModal))}>
           Meditate
         </button>
       </div>
